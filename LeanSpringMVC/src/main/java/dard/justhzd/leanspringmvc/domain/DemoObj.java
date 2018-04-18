@@ -1,4 +1,4 @@
-package dard.justhzd.leanspringmvc;
+package dard.justhzd.leanspringmvc.domain;
 
 /**
  * Created by 洪志达 on 2018/4/16.

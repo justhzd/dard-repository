@@ -3,11 +3,17 @@
 <html>
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <title>标题</title>
+    <title>自定义数据转换</title>
 </head>
 <body>
-    <pre>
-        欢迎来到SpringMVC世界
-    </pre>
+    <div id="resp"></div><input type="button" onclick="req();" value = "请求"/>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function req(){
+            $.ajax({url:'convert',data:'1-wang',type:'POST',contentType:'application/x-wisely',success:function(data){
+                $('#resp').html(data);
+            }});
+        }
+    </script>
 </body>
 </html>

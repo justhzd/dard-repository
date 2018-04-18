@@ -3,11 +3,11 @@
 <html>
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <title>标题</title>
+    <title>Test page</title>
 </head>
 <body>
     <pre>
-        欢迎来到SpringMVC世界
+        Welcome to Spring MVC world
     </pre>
 </body>
 </html>

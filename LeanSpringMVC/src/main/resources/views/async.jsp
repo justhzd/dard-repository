@@ -3,11 +3,21 @@
 <html>
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <title>标题</title>
+    <title>servlet async support</title>
 </head>
 <body>
-    <pre>
-        欢迎来到SpringMVC世界
-    </pre>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript">
+        //打开后就向后台发送请求
+        deferred();
+        function deferred(data){
+            $.get('defer', function(data){
+                //输出服务端推送的数据
+                console.log(data);
+                //请求完成后继续下一个请求.
+                deferred();
+            })
+        }
+    </script>
 </body>
 </html>

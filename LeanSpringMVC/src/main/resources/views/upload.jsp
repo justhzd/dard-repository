@@ -3,11 +3,12 @@
 <html>
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <title>标题</title>
+    <title>上传</title>
 </head>
 <body>
-    <pre>
-        欢迎来到SpringMVC世界
-    </pre>
+    <form action="upload" enctype="multipart/form-data" method="post">
+        <input type="file" name="file"/><br/>
+        <input type="submit" value="上传"/>
+    </form>
 </body>
 </html>
